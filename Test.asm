@@ -6,5 +6,5 @@ main:
 	nor $v0, $zero, $zero
 
 second:
-	j main
-
+	and $v0, $zero, $zero
+	jr $ra
