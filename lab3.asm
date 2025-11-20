@@ -13,8 +13,7 @@ array: .word 12, -5, 34, 0, 1024, -999, 87, 56, 2147483647, -2147483648, 300, -4
 main:
 	# preparing adresses for base and top of the array 
 	add $a0, $s0, $zero
-	nor $a1, $zero, $zero
-	andi $a1, $a1, 60
+	addi $a1, $zero, 60
 	
 	# checking if all the words were checked
 	beq $s0, $a1, end_main
@@ -28,16 +27,14 @@ main:
 	jal swap_word
 	
 	# constant to travers the array
-	nor $t0, $zero, $zero
-	andi $t0, $t0, 4
+	addi $t0, $zero, 4
 	
 	add $s0, $s0, $t0
 	j main
 	
 end_main:
 	add $a0, $zero, $zero
-	nor $a1, $zero, $zero
-	andi $a1, $a1, 60
+	addi $a1, $zero, 60
 	jal even_odd
 	j final_end
 
@@ -59,8 +56,7 @@ find_greatest:
 	lw $t0, 0($a0)
 	add $t1, $a0, $zero
 
-	nor $t2, $zero, $zero
-	andi $t2, $t2, 4
+	addi $t2, $zero, 4
 	
 	for_find:
 	# check if the arrya was traversed
@@ -113,11 +109,9 @@ swap_word:
 # v1: amount of even numbers
 
 even_odd:
-	nor $t0, $zero, $zero
-	andi $t0, $t0, 1
+	addi $t0, $zero, 1
 	
-	nor $t1, $zero, $zero
-	andi $t1, $t1, 4
+	addi $t1, $zero, 4
 	
 	add $v0, $zero, $zero
 	add $v1, $zero, $zero
