@@ -1,10 +1,8 @@
 .text
 
 main: 
-	nor $v0, $zero, $zero
-	jal second
-	nor $v0, $zero, $zero
+	addi $t0, $zero, 12
+	sw   $t0, 0($zero)
+	lw   $t1, 0($zero)
 
-second:
-	and $v0, $zero, $zero
-	jr $ra
+

@@ -39,9 +39,8 @@ end_main:
 	nor $a1, $zero, $zero
 	andi $a1, $a1, 60
 	jal even_odd
+	j final_end
 
-	li $v0, 10
-	syscall
 	
 #################################################	
 # a0: base array
@@ -142,3 +141,5 @@ is_even:
 	
 end_even_odd:
 	jr $ra
+	
+final_end:
