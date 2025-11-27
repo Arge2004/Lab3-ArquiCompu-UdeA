@@ -56,7 +56,7 @@
     <a name="circuit" val="main"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="clabelup" val="south"/>
-    <a name="simulationFrequency" val="1024000.0"/>
+    <a name="simulationFrequency" val="1.0"/>
     <comp lib="0" loc="(1000,310)" name="Tunnel">
       <a name="label" val="Jump"/>
     </comp>
