@@ -14,5 +14,5 @@ Nota: en caso que se desee volver a volcar el codigo a hexadecimal se debe confi
 
 ### Link a video de la sustentación
 
-[Sustentación]{https://youtu.be/27xOkmoe9GI}
+[Sustentación](https://youtu.be/27xOkmoe9GI)
 
